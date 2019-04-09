@@ -4,25 +4,68 @@ body{
     box-sizing: border-box;
     background-color: rgba(0, 100, 0, 0.3);
 }
-#contenedor-items-reserva{
+
+.fondo-gris{
+    background-color: rgba(253, 251, 227, 1);
+}
+
+#contenedor-items-dia{
     text-align: center;
-}
+    min-height: calc(100vh);}
+    #contenedor-items-dia .item-dia{
+        display: inline-block;
+        vertical-align: top;
+        width: 10%;
+        height: calc(100vw - 90vw);
+        margin: calc(1vw);
+        background-color: white;
+        cursor: pointer;
+    }
+    #contenedor-items-dia .item-dia p:first-child{
+        font-size: .8em;
+    }
+    #contenedor-items-dia .item-dia p:last-child{
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
 
-#contenedor-items-reserva .icono-item-reserva{
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    height: calc(100vw - 70vw);
-    margin: calc(1vw);
-    background-color: #f7f7f7;
-}
+#contenedor-items-reserva{
+    text-align: center;}
+    #contenedor-items-reserva .icono-item-reserva{
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+        height: calc(100vw - 80vw);
+        margin: calc(1vw);
+        background-color: white;
+        cursor: pointer;
+    }
 
-#contenedor-items-reserva .icono-item-reserva > .fa{
-    vertical-align: center;
-    font-size: 10em;
-}
+    #contenedor-items-reserva .icono-item-reserva > .fa{
+        vertical-align: center;
+        font-size: 10em;
+    }
 
-#contenedor-items-reserva .icono-item-reserva > .titulo-item-reserva{
-    font-size: 3em;
+    #contenedor-items-reserva .icono-item-reserva > img{
+        vertical-align: center;
+        width: 100%;
+    }
 
-}
+
+    #contenedor-items-reserva .icono-item-reserva > .titulo-item-reserva{
+        font-size: .7em;
+        margin: 10px auto;
+    }
+
+#contenedor-items-bicicleta{
+    text-align: center;
+    min-height: calc(100vh);}
+    #contenedor-items-bicicleta .bicicleta-item{
+        display: inline-block;
+        vertical-align: top;
+        width: 10%;
+        height: calc(100vw - 90vw);
+        margin: calc(1vw);
+        background-color: white;
+        cursor: pointer;
+    }
