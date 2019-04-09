@@ -1,10 +1,13 @@
-#contenedor-calendario {
-	width: 315px;
-	background: #332f2e;
+#contenedor-calendario{
+	text-align: center;
+	min-height: calc(100vh);
+}
+
+#cajetin-calendario {
+	width: calc(100vw - 10vw);
 	border-radius: 5px;
 	overflow: hidden;
 	display: block;
-	margin-bottom: 10px;
 	box-shadow: 0px 0px 10px #201d1c;
 	margin: 0 auto;
 	margin-top: 100px;
@@ -14,43 +17,45 @@
 	background: -webkit-linear-gradient(#749d9e, #b3a68b);
 	background: -o-linear-gradient(#749d9e, #b3a68b);
 	background: -moz-linear-gradient(#749d9e, #b3a68b);
-	background: linear-gradient(#749d9e, #b3a68b);
-}
+	background: linear-gradient(#749d9e, #b3a68b);}
 
-.titulo_mes_ano {
-	font: 18px "Roboto";
-	font-weight: 700;
-	color: #f7f3eb;
-	display: block;
-	margin: 18px 0 0 0;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 1px;
-}
+	#cajetin-calendario .titulo_mes_ano {
+		font: 18px "Roboto";
+		font-weight: 700;
+		color: #f7f3eb;
+		display: block;
+		margin: 18px 0 0 0;
+		text-transform: uppercase;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+
+	#cajetin-calendario span {
+		font-size: 2.5em;
+		font-family: "Roboto";
+		font-weight: 400;
+		color: #f7f3eb;
+		text-align: center;
+		width: calc(100vw/8);
+		height: calc(100vw/8);
+		display: inline-block;
+		float: left;
+		overflow: hidden;
+		line-height: 3em;
+		cursor: pointer;
+		border-radius: 200px;
+	}
+
+	#cajetin-calendario span:hover{
+		background-color: rgba(100,100,100,0.5);
+	}
+	#cajetin-calendario .sin_numero::before {
+		opacity: 0.3;
+		content: "";
+	}
+
 .circle {
 	border: 1px solid #f7f3eb;
 	box-sizing: border-box;
 	border-radius: 200px;
-}
-#contenedor-calendario span {
-	font: 11px "Roboto";
-	font-weight: 400;
-	color: #f7f3eb;
-	text-align: center;
-	width: 42px;
-	height: 42px;
-	display: inline-block;
-	float: left;
-	overflow: hidden;
-	line-height: 40px;
-	cursor: pointer;
-	border-radius: 200px;
-}
-
-#contenedor-calendario span:hover{
-	background-color: rgba(100,100,100,0.5);
-}
-#contenedor-calendario .sin_numero::before {
-	opacity: 0.3;
-	content: "o";
 }

@@ -5,7 +5,7 @@ body{
     background-color: rgba(0, 100, 0, 0.3);
 }
 
-.fondo-gris{
+.fila{
     background-color: rgba(253, 251, 227, 1);
 }
 
@@ -30,8 +30,9 @@ body{
     }
 
 #contenedor-items-reserva{
-    text-align: center;}
-    #contenedor-items-reserva .icono-item-reserva{
+    text-align: center;
+    min-height: calc(100vh);}
+    #contenedor-items-reserva .item-reserva{
         display: inline-block;
         vertical-align: top;
         width: 20%;
@@ -41,18 +42,18 @@ body{
         cursor: pointer;
     }
 
-    #contenedor-items-reserva .icono-item-reserva > .fa{
+    #contenedor-items-reserva .item-reserva > .fa{
         vertical-align: center;
         font-size: 10em;
     }
 
-    #contenedor-items-reserva .icono-item-reserva > img{
+    #contenedor-items-reserva .item-reserva > img{
         vertical-align: center;
         width: 100%;
     }
 
 
-    #contenedor-items-reserva .icono-item-reserva > .titulo-item-reserva{
+    #contenedor-items-reserva .item-reserva > .titulo-item-reserva{
         font-size: .7em;
         margin: 10px auto;
     }
